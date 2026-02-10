@@ -1,0 +1,120 @@
+
+PowerShell is a command-line shell, scripting language, and automation framework developed by Microsoft. It’s designed primarily for system administration, configuration management, and task automation
+
+Main features
+-------------------
+
+Command-line shell – lets you run commands directly.
+Scripting language – automates tasks using .ps1 scripts.
+Cmdlets – built-in commands that follow a Verb-Noun format (e.g., Get-Process).
+Extensible – you can create your own cmdlets, modules, and functions.
+Cross-platform – runs on Windows, Linux, and macOS (PowerShell 7+).
+Integration with Microsoft products – works well with Azure, Windows Server, and Microsoft 365.
+Remote management – execute commands on other computers using PowerShell Remoting.
+Security features – includes script signing, execution policies, and access control.
+
+Current version and Upgrading
+------------------------------
+
+To check what version you have, run:
+
+	$PSVersionTable.PSVersion
+
+
+You can upgrade to version 7(latest) by installing below file.
+	PowerShell-7.5.4-win-x64
+
+	verify again by : $PSVersionTable.PSVersion
+
+Some Examples
+---------------------
+# Shows detailed info about your system
+Get-ComputerInfo
+
+# List all running processes
+Get-Process
+
+# Filter processes using more than 100 MB of memory
+Get-Process | Where-Object {$_.WorkingSet -gt 100MB}
+
+
+# List all files in a folder
+Get-ChildItem C:\Users\YourName\Documents
+
+# Copy files from one folder to another
+Copy-Item "C:\Source\file.txt" "C:\Destination\"
+
+# Create a new folder
+New-Item -Path "C:\TestFolder" -ItemType Directory
+
+
+# Get all stopped services
+Get-Service | Where-Object {$_.Status -eq "Stopped"}
+
+# Start a service
+Start-Service -Name "Spooler"
+
+# Stop a service
+Stop-Service -Name "Spooler"
+
+
+# List all running processes, sort by memory usage, and show top 5
+Get-Process | Sort-Object -Property WorkingSet -Descending | Select-Object -First 5
+
+
+
+Working with text files
+--------------------------
+# Read a file
+Get-Content C:\TestFolder\data.txt
+
+# Write to a file
+"Hello PowerShell" | Out-File C:\TestFolder\output.txt
+
+# Append text to a file
+"Additional text" | Add-Content C:\TestFolder\output.txt
+
+
+
+
+Automate Tasks Examples
+------------------------------------
+Automate Report Generation
+
+# Export a list of running processes to CSV
+Get-Process | Select-Object Name, CPU, Id | Export-Csv "C:\Processes_$(Get-Date -Format yyyyMMdd).csv" -NoTypeInformation
+Write-Output "Process report generated."
+
+
+Automate Script Example
+------------------------------------
+Create PowerShell script that will:
+
+	Prompt the user to save their work
+	Rename the computer
+	Restart the computer
+
+
+	# Prompt the user to save their work
+	$save = Read-Host "Please save all your work. Press Enter when ready to continue."
+
+	# Ask for the new computer name
+	$newName = Read-Host "Enter the new computer name"
+
+	# Rename the computer
+	Rename-Computer -NewName $newName -Force
+
+	# Confirm and restart
+	Write-Output "The computer will now restart to apply the new name."
+	Restart-Computer -Force
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,182 @@
+
+Previous Sessions completed
+----------------------------------
+
+PowerShell commands & scripting
+System Restore Point - How to goto Maintanance mode
+Registry Editing using Regedit
+Export registry settings to a file( Sample.reg)
+SysInternal Suite(Tools & Utilities)
+Local Security Policy( secpol.msc)
+
+
+
+Group Policy (GP)	
+====================================
+
+Group Policy (GP) is a feature in Windows that allows administrators to centrally manage settings, configurations, and security policies for computers and users
+
+
+Group Policy allows centralized, automated configuration for many machines at once.
+
+
+gpedit.msc (Local Group Policy Editor)
+
+
+Difference Between Group Policy and Local Policy
+
+
+
+	Applies to multiple computers/users in an AD domain
+	Group Policy Management Console (GPMC)
+	Centralized Administration
+
+
+	Applies only to the local computer
+	Local Group Policy Editor (gpedit.msc)
+	Standalone PCs, testing, small offices
+	Local-only per machine
+
+
+
+Summary
+
+	Group Policy: Centralized control for multiple systems in a Windows domain.
+	Local Policy: Individual policy on a single computer.
+	GP overrides Local Policy when both exist.
+
+
+
+You can open the Local Group Policy Editor with:
+
+	gpedit.msc
+
+
+Run these after changes:
+	gpupdate /force
+
+
+View applied policies:
+	gpresult /h C:\gp-report.html
+
+
+Practices
+------------------------------------------------------------
+
+
+
+1. Disable USB Storage Devices
+
+
+Path:
+	Computer Configuration → Administrative Templates → System → Removable Storage Access
+
+Practice:
+
+	Enable “Removable Disks: Deny read access”
+	Enable “Removable Disks: Deny write access”
+
+===========================================================================================================
+2. Enforce a Strong Password Policy
+
+Path:
+	Computer Configuration → Windows Settings → Security Settings → Account Policies → Password Policy
+
+Practice:
+
+	Set minimum password length to 12
+	Require complexity
+	Password history = 10
+
+
+===========================================================================================================
+3. Prevent Changing the Wallpaper
+
+Path:
+	User Configuration → Administrative Templates → Desktop → Desktop
+
+Practice:
+	Enable "Desktop Wallpaper" and set a file path
+	Enable "Prevent changing wallpaper"
+
+=========================================================================================================== 
+4. Disable Control Panel & Settings - Great for kiosk or restricted users.
+
+Path:
+	User Configuration → Administrative Templates → Control Panel
+
+Practice:
+	Enable "Prohibit access to Control Panel and PC settings"
+	Log out & test
+
+===========================================================================================================
+5. Block Microsoft Store - Useful for preventing unwanted app installations.
+
+Path:
+	Computer Configuration → Administrative Templates → Windows Components → Store
+
+Practice:
+	Enable "Turn off the Store application"
+
+
+===========================================================================================================
+6. Disable OneDrive Integration - If you don’t want cloud sync.
+
+Path:
+	Computer Configuration → Administrative Templates → Windows Components → OneDrive
+
+Practice:
+	Enable "Prevent the usage of OneDrive for file storage"
+
+
+===========================================================================================================
+7.  Block EXE Files in the Downloads Folder - Prevent running suspicious programs downloaded from the internet.
+
+
+
+Path:
+	Computer Configuration → Windows Settings → Security Settings → Software Restriction Policies
+
+
+	If no policies exist → Right-click Create New Policies, Go to Additional Rules
+	
+	Right-click → New Path Rule
+
+		Path:
+			C:\Users\*\Downloads\*
+
+		Security level: Disallowed
+
+How to Test and Verify
+		
+	Download any .exe (installer or tool)
+	Try to run it → Should be blocked with a warning.
+
+===========================================================================================================
+
+
+Steps to Configure AppLocker in Windows 11 
+---------------------------------------------
+
+
+	Check Windows edition (Pro, Enterprise, or Education only).
+	Start Application Identity service (set to Automatic).
+	Open gpedit.msc (Local Group Policy Editor).
+	Go to AppLocker:
+		Computer Configuration → Windows Settings → Security Settings → Application Control Policies → AppLocker
+		Create default rules for each category (Executable, MSI, Script).
+		Create your custom allow/deny rules (e.g., block EXE in Downloads).Choose Path rule --> C:\Users\*\Downloads\*
+		Enable rule enforcement (set to Enforce rules).
+		Run gpupdate /force to apply.
+	Test the rule (try running a blocked file).
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+S1(config)#int fa0/2
+S1(config-if)#switchport access vlan 10
+S1(config-if)#ex
+S1(config)#int fa0/3
+S1(config-if)#switchport access vlan 20
+S1(config-if)#ex
+S1(config)#int fa0/4
+S1(config-if)#switchport access vlan 20
+S1(config-if)#ex
+S1(config)#int fa0/5
+S1(config-if)#switchport access vlan 30
+S1(config-if)#ex
+S1(config)#int fa0/6
+S1(config-if)#switchport access vlan 30
+S1(config-if)#ex
+S1(config)#do show vlan
+
+S1(config)#int range fa0/1-2
+S1(config-if-range)#switchport mode access
+S1(config-if-range)#switchport access vlan 10
+S1(config-if-range)#ex
+S1(config)#int range fa0/3-4
+S1(config-if-range)#switchport mode access
+S1(config-if-range)#switchport access vlan 20
+S1(config-if-range)#ex
+S1(config)#int range fa0/5-6
+S1(config-if-range)#switchport mode access
+S1(config-if-range)#switchport access vlan 30
+S1(config-if-range)#ex
+S1(config)#ex

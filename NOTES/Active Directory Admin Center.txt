@@ -1,0 +1,8 @@
+Active Directory Admin Center
+-------------------------------------------
+
+1.  In Server Manager, select "Tools" and then click Active Directory Administrative Center.
+
+Create a User in Active Directory Administrative Center
+-------------------------------------------------------------------------------
+

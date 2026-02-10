@@ -1,0 +1,190 @@
+Pre-Requisites for Window Server
+-----------------------------------------------------
+1. Install VM-Tools, VM-Settings, Network as Bridged
+
+2. Using Server Manager, Disable Firewall, Assign IP, Rename Server
+
+3. Installing Active Directory Role
+
+4. Configure AD - Promoting to Domain Controller (DC)
+
+5. Verify the AD and ping to client
+
+6. Optional: Install Bginfo64.exe
+
+
+Pre-Requisites for Window Client
+---------------------------------------------------
+1. Install VM-Tools, VM-Settings, Network as Bridged
+
+2. Disable Firewall, Assign Ip, Rename Client
+
+3. Optional - Install Bginfo64.exe
+
+4. In Network Connections (ncpa.cpl) to properties, Add/Join client to Domain
+
+5. Verify in Server Manager
+
+Create AD users
+----------------------	
+1. Open Active Directory Users and Computers, and de-collapse the Domain Category, and find "Users" folder.
+
+2. Select the "Users" folder and right click at the right side of the window and click "New" and then "User".
+
+3. Assign a name and a password.
+
+Delegating Permission to user
+------------------------------------------
+1. Open Active Directory Users and Computers (dsa.msc)
+
+2. Right click the Domain Category and select Delegate Control
+
+3. Select a user and click "Check Names" for a specified user.
+
+4. Check the specified boxes for specified access and click "Next".
+
+5. Then "Finish".
+
+Joining a Client to a Domain
+-----------------------------------------
+1. In Client, as an Client Administrator, Open Settings by Windows Button + Page Break Key
+
+2. Click Domain or Workgroup
+
+3. Fill up the Domain box with your domain
+
+4. Authenticate with the Domain Administrator's credentials (domain name and password)
+
+5. Verify and Check in Windows Servers' Active Directory Users and Computers (dsa.msc)
+
+Resigning/removing a Client in the Domain
+--------------------------------------------------------------
+1. Sign out from any Domain Users, Sign in the Client Administrator.
+
+1. Click the Workgroup radio button to remove the client from the specified domain.
+
+2. Authenticate with the Client Administrator.
+
+3. Restart the PC.
+
+4. Verify in the Windows Server's DSA.MSC.
+
+How to Demote (De-assign) Active Directory Tools in the Server
+-------------------------------------------------------------------------------------------
+
+1. At the Server Manager, select Manage category.
+
+2. Select Remove Roles and Features
+
+3. Uncheck Active Directory Tools, then Error displays, and select "Demote this Domain Controller".
+
+4. Select Force the Removal.
+
+5. Proceed and Select Demote Button.
+
+6. The Server will restart.
+
+
+dcdiag -  a specific command in command prompt or etc. to diagnose the domain controller. Testing every services to show it's passed and secured.
+
+attributes are /v /c /e
+
+--------------------------------------------------------------------------------------------------
+
+Windows Server 2022 : Group Policy Management
+
+1. Open Server Manager, then select "Tools" category. After that, select Group Policy Management.
+
+
+
+Upcoming roles to learn:
+
+1. PDC Emulator
+
+2. RID Operation Master
+
+3. Domain Naming Operation Master
+
+4. Infrastructure Operation Master
+
+5. Schema Operation Master
+
+6. Domain Name System (DNS) Server
+
+7. Global Catalog
+
+-----------------------------------------------------------------------------------------------
+
+Summary Practice
+
+0. Pre-Requisites Procedures
+
+1. Installing Windows Server
+
+2. Add Roles & Features
+
+3. Promote the server to a Domain Controller
+
+4. Demote the Active Directory
+
+5. Create users and groups in Active Directory
+
+6. Delegate Control - Special permissions
+
+7. Create groups and assign permissions
+
+8. Share folders and assign permissions
+
+9. Create Web Server by Installing IIS
+
+10. Access Webserver from Client
+
+11. Active Directory Administrative Center from Server Manager
+
+12. Active Directory - Additional Features - Protect objects from accidental deletions
+
+13. Install & Configure RSAT Tools Client (Using MMC Snap-in)
+
+14. Create Organizational Units and Child OUs.
+
+15.  Create users inside OU or adding existing users by Drag and Drop
+
+16. Create policies using Group Policy Management and verify in Clients
+
+16.  Attach Policy to OU and verify in Clients.
+------------------------------------------------------------------------------------------
+
+Windows Server Standard Core 2022
+
+Main Benefits:
+
+1. No GUI - smaller footprint (reduced resource usage).
+
+2. Use less disk space, less RAM and CPU.
+
+3. Fewer security vulnerabilities.
+
+4. Reduced attack surface.
+
+5. Fewer updates and reboots.
+
+6. More stable than full GUI.
+
+7. Ideal for production servers.
+
+8. Best choice for Hyper-V.
+
+9. Faster installation.
+
+10. Lower maintenance effort.
+
+11. Support all major sever roles.
+
+12. PowerShell-based management.
+
+13. Design for remote administration.
+
+Commands:
+
+New-NetIPAddress -InterfaceAlias "Ethernet0" -IPAddress *IP Address* -Pre
+

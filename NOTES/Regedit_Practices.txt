@@ -1,0 +1,18 @@
+Skip the logon screen and load the desktop automatically
+---------------------------------------------------------------------------------
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
+
+Create or edit these String Value (REG_SZ) entries (right-click → New → String Value):
+
+
+AutoAdminLogon = 1
+
+DefaultUserName = <your-username>
+
+DefaultPassword = <your-password>
+
+[optional]
+
+DefaultDomainName = <your-computer-or-domain-name>  
+

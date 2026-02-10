@@ -1,0 +1,11 @@
+Encrypting File System
+
+Normal - Plain Text
+
+Encrypted File - Cipher Text
+
+Tool --> Covert --> Cipher Text
+
+Encryption and Decryption
+
+TANGLED USERS - refers to a complex and messy state of user accounts, permissions, and licenses that are difficult to manage, audit, and secure

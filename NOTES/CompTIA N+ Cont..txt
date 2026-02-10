@@ -1,0 +1,38 @@
+CompTIA N+ Cont.
+
+STP
+Spanning Tree Protocol
+is a network protocol used to prevent loops in Ethernet networks by creating a loop-free logical topology.
+
+ 
+CMSA/CD
+Carrier Sense Multiple Access/Collision Detection
+It used for detecting collisions on a network
+It is device-dependent as it needs to be enabled on the device, When a device has the CSMA/CD capability, it first listens to the traffic and then transmits it. If there is a collision taking place, the device stops transmitting data.
+
+ARP
+Address Resolution Protocol
+Resolves the IP Address to MAC Address.
+is a network protocol used to map an Internet Protocol (IP) address to a physical machine address, known as a Media Access Control (MAC) address. It enables devices on a local network to communicate by resolving IP addresses to their corresponding MAC addresses, facilitating data transmission.
+
+Neighbor Discovery Protocol
+It used by IPv6 to determine the neighbors
+Works on the Link layer of the Internet network architecture
+
+
+AGENDAs
+802.11 Standards
+ 		- Lastest standard is WI-FI 7 (802.11bc) and WI-FI 6 (802.11ax)
+Frequencies and range
+Channels
+Channel Bonding
+Service Set Identifier (SSID)
+ 		- which is the name assigned to a Wi-Fi network. It helps devices identify and connect to the correct network among many available in the area.
+Antenna Types
+ 		- Omni
+ 		-Directional
+Encryption Standards
+ 		-WPA2 Personal
+ 		-WPA2 Enterprise
+Cellular Technologies
+Multiple Input, multiple output (MIMO) and multi-user MIMO (MU-MIMO)

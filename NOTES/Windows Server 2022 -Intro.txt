@@ -1,0 +1,51 @@
+Windows Server
+------------------------
+	Windows Server is a series of server operating systems developed by Microsoft. 
+	It’s designed to handle network services, file management, security, and other essential tasks that support the infrastructure of 	organizations or businesses. 
+	Windows Server is different from the standard Windows operating system because it is designed specifically for servers 
+	It provides tools and features tailored to running a business's IT infrastructure, hosting applications, managing data, and ensuring 
+	security.
+
+Key Features of Windows Server
+-----------------------------------------
+	Active Directory: Manages permissions and access to resources across the network.
+	Server Manager: A centralized dashboard to manage multiple servers and roles.
+	Hyper-V: A hypervisor for creating and managing virtual machines.
+	File and Storage Services: Handles data storage, including file sharing and access management.
+	Security Features: Includes features like BitLocker, Windows Defender, and other network security tools.
+	Remote Desktop Services: Allows multiple users to access Windows-based applications and desktops remotely.
+
+
+Windows Server 2022 Editions
+------------------------------------------------
+
+Windows Server 2022 Standard Edition
+	 Small to medium-sized businesses or organizations that need basic server functionality.
+	Ideal for small businesses or companies with light to moderate server needs.
+
+
+Windows Server 2022 Datacenter Edition
+	Large enterprises or data centers that require extensive virtualization, high availability, and advanced networking features.
+	Best suited for large organizations, especially those requiring high scalability, advanced security, and extensive virtualization.
+
+Password: Q;33t2n1+C#a
+
+Forest Password: ;2Y6+PC>5UTh
+
+#
+# Windows PowerShell script for AD DS Deployment
+#
+
+Import-Module ADDSDeployment
+Install-ADDSForest `
+-CreateDnsDelegation:$false `
+-DatabasePath "C:\Windows\NTDS" `
+-DomainMode "WinThreshold" `
+-DomainName "RJDOMAIN.COM" `
+-DomainNetbiosName "RJDOMAIN" `
+-ForestMode "WinThreshold" `
+-InstallDns:$true `
+-LogPath "C:\Windows\NTDS" `
+-NoRebootOnCompletion:$false `
+-SysvolPath "C:\Windows\SYSVOL" `
+-Force:$true

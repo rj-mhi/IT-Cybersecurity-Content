@@ -1,0 +1,70 @@
+
+Objectives
+--------------------------
+	Storage spaces
+	Storage Pool
+	File History
+	System Restore point
+	Working with Registry
+	
+
+
+Storage Specs in Windows 11
+-----------------------------------------------------
+Storage specs typically include details about your system’s storage hardware and configuration:
+Drive type: HDD (Hard Disk Drive) or SSD (Solid State Drive)
+Capacity: Total and available space on each drive
+File system: Usually NTFS or exFAT
+Partition layout: How your disk is divided (e.g., C: for OS, D: for data)
+Performance metrics: Read/write speeds, health status, and optimization settings
+Interface: SATA, NVMe, USB, etc.
+
+
+You can view these specs via:
+	Settings > System > Storage
+	Task Manager > Performance tab
+	Disk Management (diskmgmt.msc)
+	Command Prompt (wmic diskdrive get or Get-PhysicalDisk in PowerShell)
+
+🧩 Storage Pools and Storage Spaces
+	Windows 11 includes Storage Spaces, a feature that lets you group multiple physical drives into a storage pool and create virtual drives (called storage spaces) from that pool.
+
+	🔹 Key Concepts:
+	Storage Pool: A collection of physical drives (internal or external) combined into one logical unit.
+	Storage Space: A virtual drive created from the pool, which appears like a regular drive in File Explorer.
+
+🔹 Benefits:
+	Data protection: Use mirroring or parity to guard against drive failure.
+	Scalability: Add more drives to expand storage without reconfiguring.
+	Flexibility: Mix different drive types (USB, SATA, SAS).
+
+🔹 Storage Space Types:
+	Type		Drives Needed	Protection Level
+	Simple		1+		No protection
+	Two-way mirror	2+		Protects against 1 failure
+	Three-way mirror	5+		Protects against 2 failures
+	Parity		3+		Efficient storage with fault tolerance
+
+
+
+File History
+------------------
+File History in Windows 11 is a built-in backup feature that automatically saves copies of your personal files — such as documents, pictures, music, videos, and desktop files — so you can restore them later if they’re lost, damaged, or deleted.
+
+	Control Panel --> File History
+	
+	Restore previos versions of same file.
+
+
+
+
+
+	
+
+
+
+
+
+
+
+

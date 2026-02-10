@@ -1,0 +1,32 @@
+Objectives
+------------------------
+	Disable domain lookup by stopping DNS translations
+			NO IP DOMAIN LOOKUP
+	View router startup 	config  - show start
+	View router running 	config  - show run
+	Saving config	 - w 
+	Router Security by password(normal, complex)	
+		
+		ENABLE PASSWORD CISCO -   cleartext password
+		ENABLE SECRET CISCO  - encrypted password 
+		NO ENABLE PASSWORD - remove password 
+	Clients Wifi Security
+	====================================================
+Windows Clients
+-----------------------------
+
+	Network IP Manage
+		10.0.0.10 - 
+		10.0.0.50-
+	Rename clients
+	Enable Administrator user	
+	Disable firewall in both clients
+	Enable networking between clients
+	Change TimeZone to Kuwait-Riyad (+3)
+	Share files and folders
+	Install and Share printer
+	Map network Drive
+	Testing and Verify the EFS(Encrypting File System)
+	
+	
+	

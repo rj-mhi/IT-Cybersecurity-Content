@@ -1,0 +1,27 @@
+Network Route/Routing
+
+The path of data packet from one network reach to another network called ROUTE.
+
+2 TYPES OF ROUTE
+
+	Static - manually configuration
+	dynamic - automatic configuration (RIP) Router Information Protocol; Algorithms
+--------------------------------------------------------------
+
+Windows Clients
+
+Network IP Configure
+10.0.0.10
+10.0.0.50
+
+Rename Clients
+Enable Administrator user 0 LUSRMGR.msc
+DIsable firewall in both clients
+Enable networking between clients
+Change TimeZone to Kuwait-Riyadh (+3)
+Share files and folders
+Install and Share printer
+Map network Drive
+Testing and Verify and EFS(Encrypting FIle System)
+
+

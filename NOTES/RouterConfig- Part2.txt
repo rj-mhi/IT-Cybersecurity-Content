@@ -1,0 +1,65 @@
+
+CLI commands
+---------------------------
+
+	Create Banner MOTD - banner motd $  < >  $
+ 	Assign HostName,Password 
+	Saving Configuration - W 
+	Disable IP DOMAIN LookUp - NO IP DOMAIN LOOKUP
+	Access Router Interface, Configure IP
+		
+		INT FA0/0
+		     ip address 10.0.0.1 255.0.0.0
+		     no shut
+		exit
+	Show  IP address 
+		SHOW IP INT BR
+
+	Protocols - HTTP/HTTPs. Telnet, FTP, SMTP
+	Configure Server Services  - 
+	     DHCP  - for Dynamic IP
+	     HTTP   - for WEB
+                       DNS   - name translations
+
+IP ROUTING
+
+EN --> CONF T --> IP ROUTE (TARGET NETWORK ADDRESS) (SUBNET MASK) (ROUTER IP ADDRESS)
+		
+
+CLI COMMANDS
+	EN
+	SHOW RUN
+	SHOW STOP
+	SHOW IP ROUTE
+	SHOW IP PROTOCOLS
+	SHOW IP INTERFACE
+	SHOW HIST
+
+	TRACEROUTE - FOR ROUTERS
+	
+	TRACERT - FOR CONSOLE PROMPT/PC
+
+	ROUTER RIP - FOR DYNAMIC ROUTING
+
+	NETWORK (CURRENT IP)
+	THEN
+	NETWORK (NETWORK ROUTER IP)
+
+================================================
+
+DHCP SERVER -Automatically assigns IP addresses and other network configuration information, like default gateway and DNS server address, to devices on a network.
+
+POOL - Range of IP Addresses
+
+IP DHCP POOL (NAME)
+NETWORK (IP NETWORK) (SUBNET MASK)
+DEFAULT-ROUTER (FIRST IP ADDRESS)
+DNS-SERVER (AMMOUNT OF IP ADDRESS)
+
+ESTABLISH ROUTER IP
+THEN
+IP DHCP EXCLUDED-ADDRESS (ROUTER IP)
+IP DHCP EXCLUDED-ADDRESS (DNS-SERVER)
+
+SHOW IP DHCP POOL (NAME)
+SHOW IP DHCP BINDING

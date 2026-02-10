@@ -1,0 +1,73 @@
+Network Commands and Utilities — Definitions
+---------------------------------------------------------------------------------------
+1. traceroute
+
+A tool that shows the path your network traffic takes from your device to a destination. It lists all routers (“hops”) along the way and helps identify delays or connection issues.
+
+2. ipconfig, ifconfig, and ip addr
+
+ipconfig (Windows): Displays IP address, subnet mask, and gateway information for your device.
+
+ifconfig (Linux/macOS – older tool): Shows and configures network interface settings such as IP address and status.
+
+ip (Linux – modern tool): Replaces ifconfig and provides advanced control of routing, interfaces, IP addresses, and network settings.
+
+3. the ifconfig Utility
+
+An older Linux command used to view or change network interface settings, assign IP addresses, enable/disable interfaces, and check MAC addresses.
+
+4. the ip Utility
+
+A modern networking tool in Linux used to manage IP addresses, routing tables, interfaces, and tunnels. It provides more features and accuracy than ifconfig.
+
+5. the iptables Utility
+
+A Linux firewall tool that allows administrators to control inbound and outbound traffic. It filters packets, blocks unwanted connections, and applies security rules.
+
+6. the ping Utility
+
+A basic tool used to check if another device on the network is reachable. It sends small packets and measures how long they take to return, helping test connectivity and delay.
+
+Network Protocols and Supporting Tools
+7. The Address Resolution Protocol (ARP)
+
+A protocol that maps IP addresses to physical MAC addresses on a local network. It allows devices to locate each other at the hardware level.
+
+8. the arp Utility
+
+A command that displays or manages the ARP table, showing which IP addresses correspond to which MAC addresses.
+
+9. the nslookup Utility
+
+A DNS query tool used to find domain name information, such as converting a website name into its IP address. Useful for troubleshooting DNS issues.
+
+10. Resolving Names with the Hosts file
+
+A local system file that manually maps domain names to IP addresses. It overrides DNS and is often used for testing or blocking certain sites.
+
+Diagnostic and Security Tools
+11. the mtr Command (pathping)
+
+A combined network tool that performs both ping and traceroute. It shows real-time network performance across each hop to the destination.
+
+12. the Nmap Utility
+
+A powerful network scanning tool used to discover devices, open ports, services, and security vulnerabilities on a network.
+
+13. the route Command
+
+Displays or modifies the system’s routing table. It shows how a device decides where to send outbound network traffic.
+
+14. the netstat Utility
+
+Shows active network connections, open ports, routing tables, and protocol statistics. Useful for monitoring network activity and troubleshooting.
+
+15. tcpdump
+
+A packet capture tool that records and displays network traffic in real time. It helps diagnose complex issues by showing raw data packets.
+
+
+
+
+
+
