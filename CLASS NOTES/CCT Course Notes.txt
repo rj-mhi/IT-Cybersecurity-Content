@@ -1,0 +1,292 @@
+CCT Course Notes
+
+Information Security Threats and Vulnerabilities
+
+
+Threat
+undesirable event that can eventually damage and disrupt the operational and functional activities of an organization.
+Attackers use cyber attacks to infiltrate and steal data such as individual's personal information, financial information, and login credentials.
+
+	Examples of Threats:
+ An attacker stealing sensitive data of an organization 
+ An attacker causing a server to shut down 
+ An attacker tricking an employee into revealing sensitive information 
+ An attacker infecting a system with malware 
+ An attacker spoofing the identity of an authorized person to gain access 
+ An attacker modifying or tampering with the data transferred over a network 
+ An attacker remotely altering the data in a database server 
+ An attacker performing URL redirection or URL forwarding
+ An attacker performing privilege escalation for unauthorized access 
+ An attacker executing denial-of-service (DoS) attacks for making resources unavailable 
+ An attacker eavesdropping on a communication channel without authorized access
+
+Threat Sources
+	- Natural
+		- Fires
+		- Floods
+		- Power Failure
+
+	- Unintentional
+		- Unskilled administrators
+		- Accidents
+		- Lazy or untrained employees
+	- Intentional
+		-Internal
+			-Fired Employee
+			-Disgruntled Employee
+			-Service Providers
+			-Contractors
+		-External
+			-Hackers
+			-Criminals
+			-Terrorists
+			-Foreign Intelligence agents
+			-Corporate raiders
+
+Threat Actors/Agents
+	Black Hats
+	- extraordinary computing skills
+	- also known as crackers
+	White Hats
+	- professional hacking skills for defense purposes
+	-also known as security analysts
+	Gray Hats
+	- offensively and defensively at various times
+	Suicide Hackers
+	-not worried about facing jail terms or any other kind of punishment
+	Script Kiddies
+	-unskilled hacker uses running scripts, tools, and software developed by real hackers
+	Cyber Terrorists
+	-religious and political beliefs
+	State-sponsored Hackers
+	-employed by the government to penetrate and gain top-secret information
+	Hacktivist
+	-promotes a political agenda by hacking, especially using hacking to disable website
+	Hacker Teams
+	-consortium of skilled hackers
+	Industrial Spies
+	-corporate espionage (illegally spying)
+	Insider
+	-privileged access to violate rules
+	Criminal Syndicates
+	-prolonged criminal activities
+	Organized Hackers
+	-hardened criminals
+
+Attributes of Threats Actors
+Internal
+External
+Level of Sophistication
+Resources/funding
+Intent/Motivation
+
+Threat Vectors
+medium through which an attacker gains access to system by exploiting identified vulnerabilities
+Direct access
+Removable Media
+Wireless
+Email
+Cloud
+Ransomware/malware
+Supply Chain
+Business partners
+
+Introduction to Malware
+malicious software that damages or disables computer systems and gives limited or full control
+Different Ways for Malware to Enter a System
+Instant Messenger Applications
+Portable Hardware Media/Removable Devices
+Browser and Email Software Bugs
+Insecure Patch Management
+Rogue/Decoy Applications
+Untrusted Sites and Freeware Web Applications/Software
+Email Attachments
+Network Propagation
+File Sharing Services
+Installation by other Malware
+Bluetooth and Wireless Networks
+
+Common techniques attacks use to distribute malware on the web
+black hat search engine optimization
+social engineered click-jacking
+spear-phishing sites
+malvertising
+compromised legitimate websites
+drive-by downloads
+spam emails
+
+Components of Malware
+Crypter - conceal
+Downloader - downloads the code
+Dropper - covert carrier, transports
+Exploit - sequence of commands
+Injector - injects exploits or malicious codes
+Obfuscator - conceals the code in more complex and difficult way
+Packer - compresses the file
+Payload - performs any desired activity
+Malicious Code - heart of the malware
+	Java Applets
+	ActiveX Controls
+	Browser Plug-ins
+	Pushed Content
+
+Types of Malware
+trojans -harmful code contained inside a harmless program
+
+indications>
+
+computer screen blinks, display backwards
+default background, change automatically
+web page suddenly opens
+color settings changes
+antivirus automatically disabled
+pop-up suddenly appears
+windows start button gone
+clipboard appear to be manipulated
+keyboard and mouse freeze
+contacts receive emails that user did not send
+strange personal message asking to answer
+system turns off and restarts in unusual ways
+task disappears automatically
+task manager disabled
+
+
+how hackers use trojans>
+
+delete os's critical files
+generate fake traffic
+records screenshots
+download malicious files
+disable firewalls
+create backdoors
+infect as a proxy server for relaying attacks
+use victim pc as a botnet to perform ddos attacks
+steal information
+encrypt the machine to avoid from victim accessing it
+to store illegal materials
+ftp server for pirated software
+script kiddies just want to have fun
+to make the target be held responsible
+
+types of trojans>
+
+	remote access trojans (RATs) - can give full control, acts as a server and listens on a port
+	backdoor trojans - bypass stand system authentication like IDS and firewalls
+	botnet trojans - "bot herders" infect larger number of computers (SEO hacking, phishing, etc.)
+	rootkit trojans - cannot be detected, gives full control
+	e-banking trojans - steal minimum or max monetary amounts in online banking
+	point-of-sale trojans - grabs credit card's info
+	defacement trojans - can destroy or change the entire content of a database
+	service protocol trojans - take advantage of vulnerable service protocols
+	mobile trojans - targets mobile phones
+	iot trojans - puts botnet to attack other machines outside the iot network
+	security software disabler trojans - stops firewalls and IDS by killing the process (entry trojans)
+	destructive trojans - OS failure, random deletion (antivirus may not detect it)
+	ddos attack trojans - performs ddos attacks
+	command shell trojans - trojan server installs on machine, provides control of a command shell
+	
+
+viruses - scourge of modern computing. self-replicating program, has variety of files, can be spread from one PC to another
+
+characteristics>
+
+infect other programs
+transform themselves
+encrypt themselves
+alter data
+corrupt files and programs
+self-replicate
+
+motives for virus>
+
+inflict damage
+realize financial benfs.
+vandalize
+play pranks
+conduct research
+engage in cyber-terror
+distru. polit. messages
+damage networks
+gain remote access
+
+indications>
+
+degraded performance
+no display
+OS does not load
+computer freezes
+folders are missing
+suspicious hard drive activity
+browser freezes
+lack of storage space
+unwanted ads and pop-up
+unable to open files
+strange emails
+
+lifecycle>
+
+design - development of virus code
+replication - spreads itself
+launch - activated performs specific actions
+detection - identified as a threat
+incorporation - assimilates defenses
+execution of the damage routine - install antivirus and eliminate the virus
+
+how does computer get infected by it>
+
+downloads
+email attachments
+pirated software
+failing to install security software
+updating software
+browsers
+firewalls
+pop-ups
+removable media
+network access
+backup and restore
+malicious online ads
+social media
+
+types of viruses>
+
+	system/boot sector virus - common one, master boot record (MBR) is where it copies itself
+	file virus - 
+	multipartite virus
+	macrovirus
+	cluster virus
+	stealth/tunneling virus
+	encryption virus
+	sparse infector virus
+	polymorphic virus
+	metamorphic virus
+	overwriting file/cavity virus
+	companion virus/camouflage virus
+	shell virus
+	file ext. cirus
+	FAT virus
+	logic bomb virus
+	web scripting virus
+	email virus
+	armored virus
+	add-on virus
+	intrusive virus
+	direct-action/transient virus
+	terminate and stay resident virus
+
+
+
+ransomware
+computer worms
+rootkits
+PUAs or grayware
+spyware 
+keylogger
+botnets 
+fileless malware
+
+
+
+
+
+

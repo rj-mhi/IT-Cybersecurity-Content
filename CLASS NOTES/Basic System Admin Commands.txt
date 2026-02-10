@@ -1,0 +1,37 @@
+cmd  - command prompt
+
+Run as Administrator
+(elevate command prompt)
+
+Powershell for scripts(cmdlets)
+
+lusrmgr.msc - Local user manager
+devmgmt.msc - Device mgmt
+diskmgmt.msc  - Disk management
+control  - control panel
+ncpa.cpl - Network settings
+
+	Events Viewer  - Windows Logs
+	Windows Updates, Security, Critical,App updates
+	System Restore Points
+	Network Changes by ncpa.cpl (Ethernet Adapter)
+
+
+	192.168.1.11	
+	192.168.1.252
+
+	10.0.0.0
+
+	TECH SUPPORT - L1, L2, L3,L4
+
+10.0.0.100
+
+	\\192.168.1.11
+
+	Credential Manager
+
+
+
+
+
+	

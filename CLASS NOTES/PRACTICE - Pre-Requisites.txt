@@ -1,0 +1,34 @@
+Pre-Requisites and Activities 
+---------------------------------
+
+1) Rename PC
+ 
+2) View IP Address by using ipconfig command in CMD
+
+3) Change Time Zone
+
+4) Install and Share  Printer
+
+5) Enabling Administrator using LUSRMGR.msc
+
+6) View the Device using DeviceManger (DevMgmt.msc)
+
+7) VM->Setting --> Enable Net Adapter to Bridge
+
+8) Saving backup of VM by using Snapshots
+
+9) Restore backup using Snapshot manager
+
+10) View Network Adapter using NCPA.cpl
+
+
+Pre-requisites
+------------------------------------------------------------
+
+	1)  Network Settings
+	
+	2)  ReName the computer. Set TimeZone
+	
+	3)  Enable Administrator user and login to system
+	
+	4)  View the IP Address - ipconfig

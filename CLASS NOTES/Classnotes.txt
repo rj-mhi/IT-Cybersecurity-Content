@@ -1,0 +1,41 @@
+
+VMware 
+
+Firewall settings
+
+	Domain, Public, Private
+	ON/OFF
+
+	ping 10.0.0.12 -t
+
+	tracert
+
+	netsh advfirewall set allprofile state off
+
+	mAh - 5000 mah
+	
+	CMOS battery 
+	
+	BIOS - steps of instructions
+
+	Hardware--> HDD --> OS --> Loaded into MEM
+
+	Windows Folder
+
+	DXDIAG
+	WHQL 
+
+	Impact Printer
+	InkJet Printer
+	InkTank Printer
+	Laser
+	3D Printer
+
+	Create VHD 
+	Attch and Detach
+
+	DISKMGMT.MSC
+
+
+
+
